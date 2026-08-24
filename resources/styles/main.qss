@@ -1,0 +1,530 @@
+/* ============================================================
+   GLOBAL
+   ============================================================ */
+
+QMainWindow {
+    background: {{BACKGROUND}};
+}
+
+QWidget {
+    background: {{BACKGROUND}};
+    color: {{TEXT_PRIMARY}};
+    font-family: "Segoe UI";
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+QWidget#sidebar {
+    background: {{SIDEBAR_BG}};
+    border-right: 1px solid {{BORDER}};
+}
+
+QLabel#appName {
+    color: {{TEXT_PRIMARY}};
+    font-size: 18px;
+    font-weight: 700;
+}
+
+QLabel#sidebarTagline {
+    color: {{TEXT_MUTED}};
+    font-size: 12px;
+}
+
+
+/* ============================================================
+   SIDEBAR TOGGLE
+   ============================================================ */
+
+QPushButton#sidebarToggle {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+}
+
+QPushButton#sidebarToggle:hover {
+    background: {{HOVER_BG}};
+}
+
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+
+QPushButton#navButton {
+    background: transparent;
+    color: {{TEXT_SECONDARY}};
+    border: none;
+    border-radius: 7px;
+    text-align: left;
+    padding: 11px 14px;
+    min-height: 22px;
+    font-size: 14px;
+}
+
+QPushButton#navButton:hover {
+    background: {{HOVER_BG}};
+    color: {{TEXT_PRIMARY}};
+}
+
+QPushButton#navButton:checked {
+    background: {{ACTIVE_BG}};
+    color: {{ACCENT}};
+    border-left: 3px solid {{ACCENT}};
+    font-weight: 600;
+}
+
+
+/* ============================================================
+   PAGE HEADERS
+   ============================================================ */
+
+QLabel#pageTitle {
+    color: {{TEXT_PRIMARY}};
+    font-size: 28px;
+    font-weight: 700;
+}
+
+QLabel#pageSubtitle {
+    color: {{TEXT_MUTED}};
+    font-size: 14px;
+}
+
+QLabel#dashboardBrand {
+    color: {{TEXT_PRIMARY}};
+    font-size: 22px;
+    font-weight: 700;
+}
+
+QLabel#dashboardSubtitle {
+    color: {{TEXT_MUTED}};
+    font-size: 14px;
+}
+
+QLabel#dashboardSectionTitle {
+    color: {{TEXT_PRIMARY}};
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+QFrame#createResumeCard,
+QFrame#dashboardResumeCard,
+QFrame#resumeCard,
+QFrame#workspaceCard,
+QFrame#entryCard,
+QFrame#settingsCard {
+    background: {{CARD_BG}};
+    border: 1px solid {{BORDER}};
+    border-radius: 10px;
+}
+
+QFrame#createResumeCard:hover,
+QFrame#dashboardResumeCard:hover,
+QFrame#resumeCard:hover {
+    background: {{CARD_HOVER}};
+    border: 1px solid {{ACCENT}};
+}
+
+
+/* ============================================================
+   CARD TEXT
+   ============================================================ */
+
+QLabel#createCardTitle,
+QLabel#dashboardResumeTitle,
+QLabel#resumeCardTitle,
+QLabel#cardTitle {
+    color: {{TEXT_PRIMARY}};
+    font-size: 16px;
+    font-weight: 600;
+}
+
+QLabel#createCardText,
+QLabel#dashboardResumeMeta,
+QLabel#resumeCardMeta,
+QLabel#cardSubtitle {
+    color: {{TEXT_MUTED}};
+    font-size: 13px;
+}
+
+
+/* ============================================================
+   PRIMARY BUTTON
+   ============================================================ */
+
+QPushButton#primaryButton {
+    background: {{ACCENT}};
+    color: {{BUTTON_TEXT}};
+    border: none;
+    border-radius: 7px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+QPushButton#primaryButton:hover {
+    background: {{ACCENT_HOVER}};
+}
+
+QPushButton#primaryButton:pressed {
+    background: {{ACCENT}};
+}
+
+
+/* ============================================================
+   SECONDARY BUTTON
+   ============================================================ */
+
+QPushButton#secondaryButton {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER_LIGHT}};
+    border-radius: 7px;
+    padding: 9px 16px;
+}
+
+QPushButton#secondaryButton:hover {
+    background: {{HOVER_BG}};
+    border: 1px solid {{ACCENT}};
+}
+
+
+/* ============================================================
+   DANGER BUTTON
+   ============================================================ */
+
+QPushButton#deleteButton,
+QPushButton#dangerButton {
+    background: transparent;
+    color: {{DANGER}};
+    border: 1px solid {{DANGER}};
+    border-radius: 7px;
+    padding: 8px 14px;
+}
+
+QPushButton#deleteButton:hover,
+QPushButton#dangerButton:hover {
+    background: {{DANGER_BG}};
+}
+
+
+/* ============================================================
+   NORMAL BUTTON
+   ============================================================ */
+
+QPushButton {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+}
+
+QPushButton:hover {
+    background: {{HOVER_BG}};
+}
+
+
+/* ============================================================
+   INPUT FIELDS
+   ============================================================ */
+
+QLineEdit,
+QTextEdit,
+QPlainTextEdit {
+    background: {{INPUT_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER_LIGHT}};
+    border-radius: 6px;
+    padding: 8px;
+    selection-background-color: {{ACCENT}};
+}
+
+QLineEdit:focus,
+QTextEdit:focus,
+QPlainTextEdit:focus {
+    border: 1px solid {{ACCENT}};
+}
+
+
+/* ============================================================
+   COMBO BOX
+   ============================================================ */
+
+QComboBox {
+    background: {{INPUT_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER_LIGHT}};
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+QComboBox:hover {
+    border: 1px solid {{ACCENT}};
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 30px;
+}
+
+QComboBox QAbstractItemView {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER}};
+    selection-background-color: {{ACTIVE_BG}};
+    selection-color: {{TEXT_PRIMARY}};
+}
+
+
+/* ============================================================
+   CHECKBOX
+   ============================================================ */
+
+QCheckBox {
+    color: {{TEXT_PRIMARY}};
+    spacing: 8px;
+}
+
+
+/* ============================================================
+   RADIO BUTTON
+   ============================================================ */
+
+QRadioButton {
+    color: {{TEXT_PRIMARY}};
+    spacing: 8px;
+}
+
+
+/* ============================================================
+   TABLE
+   ============================================================ */
+
+QTableWidget {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+    gridline-color: {{BORDER}};
+    border: 1px solid {{BORDER}};
+    border-radius: 8px;
+}
+
+QHeaderView::section {
+    background: {{SIDEBAR_BG}};
+    color: {{TEXT_SECONDARY}};
+    border: none;
+    border-bottom: 1px solid {{BORDER}};
+    padding: 10px;
+    font-weight: 600;
+}
+
+QTableWidget::item:selected {
+    background: {{ACTIVE_BG}};
+    color: {{TEXT_PRIMARY}};
+}
+
+
+/* ============================================================
+   LIST WIDGET
+   ============================================================ */
+
+QListWidget {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER}};
+    border-radius: 8px;
+}
+
+QListWidget::item {
+    padding: 10px;
+}
+
+QListWidget::item:selected {
+    background: {{ACTIVE_BG}};
+    color: {{TEXT_PRIMARY}};
+}
+
+QListWidget::item:hover {
+    background: {{HOVER_BG}};
+}
+
+
+/* ============================================================
+   SCROLL AREA
+   ============================================================ */
+
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+QScrollBar:vertical {
+    background: {{SCROLLBAR_BG}};
+    width: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical {
+    background: {{SCROLLBAR_HANDLE}};
+    min-height: 30px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: {{TEXT_MUTED}};
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+
+
+/* ============================================================
+   HORIZONTAL SCROLLBAR
+   ============================================================ */
+
+QScrollBar:horizontal {
+    background: {{SCROLLBAR_BG}};
+    height: 10px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal {
+    background: {{SCROLLBAR_HANDLE}};
+    min-width: 30px;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+
+/* ============================================================
+   MENU
+   ============================================================ */
+
+QMenu {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER}};
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 8px 25px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background: {{HOVER_BG}};
+}
+
+
+/* ============================================================
+   TOOLTIP
+   ============================================================ */
+
+QToolTip {
+    background: {{CARD_BG}};
+    color: {{TEXT_PRIMARY}};
+    border: 1px solid {{BORDER}};
+    border-radius: 5px;
+    padding: 6px;
+}
+
+
+/* ============================================================
+   DIALOG
+   ============================================================ */
+
+QDialog {
+    background: {{BACKGROUND}};
+    color: {{TEXT_PRIMARY}};
+}
+
+
+/* ============================================================
+   TAB WIDGET
+   ============================================================ */
+
+QTabWidget::pane {
+    border: 1px solid {{BORDER}};
+    background: {{CARD_BG}};
+}
+
+QTabBar::tab {
+    background: {{SIDEBAR_BG}};
+    color: {{TEXT_MUTED}};
+    padding: 10px 18px;
+    border: none;
+}
+
+QTabBar::tab:selected {
+    color: {{ACCENT}};
+    border-bottom: 2px solid {{ACCENT}};
+}
+
+
+/* ============================================================
+   PROGRESS BAR
+   ============================================================ */
+
+QProgressBar {
+    background: {{HOVER_BG}};
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: {{TEXT_PRIMARY}};
+}
+
+QProgressBar::chunk {
+    background: {{ACCENT}};
+    border-radius: 5px;
+}
+
+
+/* ============================================================
+   EMPTY STATES
+   ============================================================ */
+
+QLabel#emptyResumeMessage,
+QLabel#emptyMessage {
+    color: {{TEXT_MUTED}};
+    font-size: 15px;
+}
+
+
+/* ============================================================
+   STATUS
+   ============================================================ */
+
+QLabel#successLabel {
+    color: {{SUCCESS}};
+}
+
+QLabel#dangerLabel {
+    color: {{DANGER}};
+}
+
+
+/* ============================================================
+   SEPARATOR
+   ============================================================ */
+
+QFrame#separator {
+    background: {{BORDER}};
+    max-height: 1px;
+    border: none;
+}
