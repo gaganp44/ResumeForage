@@ -1,3 +1,4 @@
+
 # ResumeForge — Modules 1 to 4
 
 A modular PySide6 desktop application.
@@ -17,3 +18,5 @@ python main.py
 ## Notes
 The application uses SQLite and SQLAlchemy. Resume records use normalized section tables,
 while versions store complete JSON snapshots so a version can be restored independently.
+=======
+A desktop resume builder application that allows users to create, edit, manage, and export professional resumes using customizable templates.
