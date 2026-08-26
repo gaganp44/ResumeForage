@@ -1,22 +1,32 @@
+ResumeForge — Professional Resume Builder
 
-# ResumeForge — Modules 1 to 4
+ResumeForge is a modular desktop application built with Python and PySide6 that helps users create, edit, manage, preview, and organize professional resumes through an intuitive interface.
 
-A modular PySide6 desktop application.
+Features
+Persistent left-side navigation and application dashboard
+Resume creation and management
+Structured resume builder for organizing professional information
+Live resume preview
+Three customizable resume templates
+Resume version management
+Save and restore previous resume versions
+SQLite database integration using SQLAlchemy
+Normalized database structure for resume sections
+Complete JSON snapshots for independent version restoration
+Technologies Used
+Python
+PySide6
+SQLite
+SQLAlchemy
+Run the Application
 
-## Included
-1. Application shell and persistent left navigation
-2. Dashboard and resume management
-3. Complete structured resume builder
-4. Live preview, three templates, and version management
+Install the required dependencies:
 
-## Run
-```bash
 pip install -r requirements.txt
-python main.py
-```
 
-## Notes
-The application uses SQLite and SQLAlchemy. Resume records use normalized section tables,
-while versions store complete JSON snapshots so a version can be restored independently.
-=======
-A desktop resume builder application that allows users to create, edit, manage, and export professional resumes using customizable templates.
+Then start the application:
+
+python main.py
+Architecture
+
+ResumeForge uses a modular architecture to keep the application organized and maintainable. Resume data is stored using normalized section tables, while resume versions are preserved as complete JSON snapshots, allowing users to restore previous versions independently.
